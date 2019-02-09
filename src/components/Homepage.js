@@ -5,8 +5,8 @@ import logo from '../images/logo2.png';
 import hometext from '../images/home-text.jpg';
 import HomeMobile from './HomeMobile.js';
 import Menu from './Menu'
-import {BrowserRouter, Link , Switch} from 'react-router-dom';
 import {withRouter} from 'react-router-dom';
+import {BrowserRouter} from 'react-router-dom';
 
 
 class Homepage extends React.Component {
@@ -45,12 +45,14 @@ class Homepage extends React.Component {
         
         if (this.state.w > 1000){
         return(
-            <BrowserRouter>
+        
           
           <div>
             <div className='left-side'>
                 <div className='image-wrapper'>
+                <BrowserRouter>
                   <Menu />
+                  </BrowserRouter>
                 <h4 className='welcome'>Καλωσήρθατε</h4>
                 </div>
             </div>
@@ -80,7 +82,7 @@ class Homepage extends React.Component {
         </div>
 
 
-            </BrowserRouter>
+            
          );
         }
         else{

@@ -6,9 +6,8 @@ import Homepage from './components/Homepage';
 import WhoWeAre from './components/WhoWeAre';
 
 ReactDOM.render(
-  <BrowserRouter>
-<App />
-</BrowserRouter>
+  <BrowserRouter><App /></BrowserRouter>
+
   ,document.querySelector('#root')
 );
 

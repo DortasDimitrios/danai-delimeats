@@ -13,8 +13,8 @@ class App extends React.Component{
          
             <Switch>
         
-                <Route  path="/" exact component={Homepage} />
-                <Route path="/about-us" exact component={WhoWeAre} />
+                <Route  path="/" exact render={(props)=> <Homepage {...props}/>} />
+                <Route path="/about-us" exact render={(props)=> <WhoWeAre {...props}/>} />
                 {/* <Route exactly component={Page3} pattern="/path3" />
                 <Route component={Page404} /> */}
             </Switch>
