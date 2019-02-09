@@ -45,12 +45,12 @@ class MobileMenu extends React.Component{
                
                 <div className="overlay-content">
                     <ul>
-                        <a href='/' onClick={ () => this.setState({active: !this.state.active})}><li>Καλωσήρθατε</li></a>
-                        <a href='/about' onClick={ () => this.setState({active: !this.state.active})}><li>Ποιοί Είμαστε</li></a>
-                        <a href='/' onClick={ () => this.setState({active: !this.state.active})}><li>Προϊόντα</li></a>
-                        <a href='/' onClick={ () => this.setState({active: !this.state.active})}><li>Συνταγές</li></a>
-                        <a href='/' onClick={ () => this.setState({active: !this.state.active})}><li>Blog</li></a>
-                        <a href='/' onClick={ () => this.setState({active: !this.state.active})}><li>Επικοινωνία</li></a>
+                        <a href='/' onClick={ () => this.setState({active: !this.state.active})}><Link>Καλωσήρθατε</Link></a>
+                        <a href='/about' onClick={ () => this.setState({active: !this.state.active})}><Link>Ποιοί Είμαστε</Link></a>
+                        <a href='/' onClick={ () => this.setState({active: !this.state.active})}><Link>Προϊόντα</Link></a>
+                        <a href='/' onClick={ () => this.setState({active: !this.state.active})}><Link>Συνταγές</Link></a>
+                        <a href='/' onClick={ () => this.setState({active: !this.state.active})}><Link>Blog</Link></a>
+                        <a href='/' onClick={ () => this.setState({active: !this.state.active})}><Link>Επικοινωνία</Link></a>
                     </ul>
                 </div>
           </div>

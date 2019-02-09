@@ -50,17 +50,17 @@ toggle between hiding and showing the dropdown content */
                  <Link to='/about-us' >Ποιοί είμαστε</Link>
                     
                     
-                    <a><li onClick={() => this.setState({active: !this.state.active})} className='dropbtn'>Προϊόντα < img className='arrow' src={triagnle} /></li></a>
+                    <Link to='/' onClick={() => this.setState({active: !this.state.active})} className='dropbtn'>Προϊόντα < img className='arrow' src={triagnle} /></Link>
                         
                             <div id="myDropdown" className={ this.state.active ? "show":"hide"}>
-                                <a href="#home">Home</a>
-                                <a href="#about">About</a>
-                                <a href="#contact">Contact</a>
+                                <Link to='/' href="#home">Home</Link>
+                                <Link to='/' href="#about">About</Link>
+                                <Link to='/' href="#contact">Contact</Link>
                             </div>
                     
-                    <a><li>Συνταγές</li></a>
-                    <a><li>Blog</li></a>
-                    <a><li>Επικοινωνία</li></a> 
+                    <Link to='/'>υνταγές</Link>
+                    <Link to='/'>Blog</Link>
+                    <Link to='/'>Επικοινωνία</Link> 
                 </ul>
            
              
