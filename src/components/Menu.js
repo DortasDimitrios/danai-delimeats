@@ -58,10 +58,11 @@ toggle between hiding and showing the dropdown content */
                                 <Link to='/' href="#contact">Contact</Link>
                             </div>
                     
-                    <Link to='/'>υνταγές</Link>
+                    <Link to='/'>Συνταγές</Link>
                     <Link to='/'>Blog</Link>
                     <Link to='/'>Επικοινωνία</Link> 
                 </ul>
+
            
              
            
