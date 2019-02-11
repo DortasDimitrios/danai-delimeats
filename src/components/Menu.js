@@ -1,19 +1,13 @@
 
 import React from 'react';
 
-import ReactDOM from 'react-dom';
 
 import menustyle from '../styles/menustyle.css';
 
 import triagnle from '../images/down copy.png';
 
-import Homepage from './Homepage';
 
-import WhoWeAre from './WhoWeAre';
-
-import MobileMenu from '../components/MobileMenu';
-
-import {BrowserRouter , Route , Link, Redirect} from 'react-router-dom';
+import {BrowserRouter , Route , Link} from 'react-router-dom';
 
 import {withRouter} from 'react-router-dom';
 
@@ -42,32 +36,44 @@ toggle between hiding and showing the dropdown content */
     render(){
         return(
              <BrowserRouter>
-            <div className='menu'>
-            
-                <ul>
+               
+
+
+
+
+
+
+
+
+              
+                <div className='menu'>
+                
                         
-                 <Link to='/'>Καλωσήρθατε</Link>
-                 <Link to='/about-us' >Ποιοί είμαστε</Link>
-                    
+                 <Link to={'/'}>Καλωσήρθατε</Link>
+                 <Link to={'/about-us'} >Ποιοί είμαστε</Link>
+                 
                     
                     <Link to='/' onClick={() => this.setState({active: !this.state.active})} className='dropbtn'>Προϊόντα < img className='arrow' src={triagnle} /></Link>
-                        
-                            <div id="myDropdown" className={ this.state.active ? "show":"hide"}>
-                                <Link to='/' href="#home">Home</Link>
-                                <Link to='/' href="#about">About</Link>
-                                <Link to='/' href="#contact">Contact</Link>
-                            </div>
                     
+                            <div className={ this.state.active ? "show":"hide"}>
+                            <div className='dropdown-content'>
+                                <Link to='/about-us' >Home</Link>
+                                <Link to='/'>About</Link>
+                                <Link to='/'>Contact</Link>
+                                </div>
+                            </div>
+
                     <Link to='/'>Συνταγές</Link>
                     <Link to='/'>Blog</Link>
                     <Link to='/'>Επικοινωνία</Link> 
-                </ul>
 
-           
-             
-           
-            </div>
-            
+                   
+                    
+                    
+                    
+                        
+                 </div> 
+                
             </BrowserRouter> 
         );
     }

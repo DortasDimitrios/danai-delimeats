@@ -45,18 +45,17 @@ class MobileMenu extends React.Component{
                
                 <div className="overlay-content">
                     <ul>
-                        <a href='/' onClick={ () => this.setState({active: !this.state.active})}><Link>Καλωσήρθατε</Link></a>
-                        <a href='/about' onClick={ () => this.setState({active: !this.state.active})}><Link>Ποιοί Είμαστε</Link></a>
-                        <a href='/' onClick={ () => this.setState({active: !this.state.active})}><Link>Προϊόντα</Link></a>
-                        <a href='/' onClick={ () => this.setState({active: !this.state.active})}><Link>Συνταγές</Link></a>
-                        <a href='/' onClick={ () => this.setState({active: !this.state.active})}><Link>Blog</Link></a>
-                        <a href='/' onClick={ () => this.setState({active: !this.state.active})}><Link>Επικοινωνία</Link></a>
+                        <Link to='/' onClick={ () => this.setState({active: !this.state.active})}>Καλωσήρθατε</Link>
+                        <Link to='/about-us' onClick={ () => this.setState({active: !this.state.active})}>Ποιοί Είμαστε</Link>
+                        <Link to='/' onClick={ () => this.setState({active: !this.state.active})}>Προϊόντα</Link>
+                        <Link to='/' onClick={ () => this.setState({active: !this.state.active})}>Συνταγές</Link>
+                        <Link to='/' onClick={ () => this.setState({active: !this.state.active})}>Blog</Link>
+                        <Link to='/' onClick={ () => this.setState({active: !this.state.active})}>Επικοινωνία</Link>
                     </ul>
                 </div>
           </div>
         
-             <Route path='/' />
-            <Route path='/about' exact component={WhoWeAre} />
+             
           
           </div>
           </BrowserRouter>

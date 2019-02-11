@@ -1,9 +1,15 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
 import Menu from './Menu';
 import {BrowserRouter,Link,Switch} from 'react-router-dom';
+import WhoWeAreStyle from '../styles/WhoWeAreStyle.css';
 import {withRouter} from 'react-router-dom';
-
+import aboutdown from '../images/about-down.png';
+import twitter from '../images/twitter.png';
+import fb from '../images/facebook.png';
+import instagram from '../images/instagram.png';
+import linkedin from '../images/linkedin.png';
+import MobileMenu from './MobileMenu';
+import AboutUs from './AboutUs';
 
 class WhoWeAre extends React.Component  {
 
@@ -41,20 +47,46 @@ class WhoWeAre extends React.Component  {
                 if (this.state.w>1000){
                     return(
 
-                            <BrowserRouter>
-                                
+                            
+                        <div>
                               <div className='left-side'>
+                              <BrowserRouter>
                               
-                                <div className='image-wrapper'>
+                                <div className='image-wrapper-about'>
                                      
                                      <Menu/>  
                                    
                                     <h4 className='welcome'>Ποιοί είμαστε</h4>
                                 </div>
+                                </BrowserRouter>
                               </div>
-                             
-                            </BrowserRouter>
+
+                              <div className='right-side'>
+                                                    <AboutUs />
+                            </div>
+                        </div>
+
                           
+                          
+                    );
+                }
+
+                    // responsiveness
+
+                else{
+                    return(
+                        <div>
+                            <div>
+                                <div className='left-side'>
+                                <div className='image-wrapper-about'>
+                                <MobileMenu />
+                                <h4 className='welcome'>Ποιοί Είμαστε</h4>
+                                </div>
+                                </div>
+                                <AboutUs />
+                            </div>
+            
+                        </div>
                     );
                 }
                 

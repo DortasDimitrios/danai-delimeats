@@ -46,15 +46,17 @@ class Homepage extends React.Component {
         if (this.state.w > 1000){
         return(
         
-          
+        <BrowserRouter>
           <div>
+              
             <div className='left-side'>
+            <h4 className='welcome'>Καλωσήρθατε</h4>
                 <div className='image-wrapper'>
-                <BrowserRouter>
-                  <Menu />
-                  </BrowserRouter>
-                <h4 className='welcome'>Καλωσήρθατε</h4>
-                </div>
+                    <Menu />
+                 </div>
+
+                 
+                
             </div>
 
             <div className='right-side'>
@@ -79,7 +81,9 @@ class Homepage extends React.Component {
                     <img src={hometext}/>
                 </div>
             </div>
+            
         </div>
+        </BrowserRouter>
 
 
             

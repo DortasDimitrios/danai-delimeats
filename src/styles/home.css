@@ -3,6 +3,7 @@ body{
     height: 100%;
     margin: 0;
     padding:0;
+    font-family: "Libre Baskerville",serif;
 }
 
 .left-side{
@@ -17,14 +18,18 @@ body{
    background-image: url('../images/homeimg.JPG');
    background-size: cover;
    background-position: right;
+
 }
 
 .welcome{
-    color: white;
+    color: rgb(224, 224, 224);
     font-size: 6vw;
-    padding-top: 10%;
+    z-index: 2;
+    position: absolute;
+    padding-top: 30%;
+    padding-left: 10%;
     text-align: center;
-    z-index: 0;
+    
     
 }
 
@@ -72,7 +77,11 @@ body{
     }
     .welcome{
         position: relative;
-        justify-content: center;  
+        padding-top: 10%;
+        padding-left: 0%;
+
+        
+        justify-content: center !important;  
         font-size: 10vw;
   
     }
