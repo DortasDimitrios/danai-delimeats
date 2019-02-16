@@ -4,6 +4,7 @@ body{
     margin: 0;
     padding:0;
     font-family: "Libre Baskerville",serif;
+    background-color: rgb(255, 255, 255) ;
 }
 
 .left-side{
@@ -49,9 +50,9 @@ body{
     }
     .welcome{
         position: relative;
-        bottom:60%;
+        bottom:80%;
         justify-content: center;  
-       
+       z-index: 0;
         font-size: 10vw;
         
     }
@@ -80,7 +81,7 @@ body{
         padding-top: 10%;
         padding-left: 0%;
 
-        
+        z-index: 0;
         justify-content: center !important;  
         font-size: 10vw;
   

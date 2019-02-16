@@ -1,0 +1,144 @@
+.grid{
+     width:50%;
+    left:50%;
+    position: relative;
+     display: flex;
+    
+    align-items: flex-start;
+    justify-content: start;
+    flex-direction: column;
+    flex-flow: wrap;
+    z-index: 0;
+
+  
+}
+.grid img{
+    /* flex-direction: column;
+    justify-content: flex-start;
+    -webkit-box-align: center;
+    align-items: center;
+    column-count: 2;
+    column-gap: 0;
+    */
+    max-width:50%; 
+    height: auto;
+    position: relative;
+    z-index: 0;
+    display: inline-block;
+    opacity: 1;
+    transition:500ms;
+} 
+.grid img:hover{
+    opacity: 0.6;
+    cursor: pointer;
+}
+
+
+
+
+
+
+
+
+@media only screen and (max-width: 1000px) and (min-width:850px){
+    .left-side{
+        position: relative;
+        width:100%;
+        height:50vh;
+    }
+    .image-wrapper-rec{
+        position: absolute;
+        top:0;
+        height:inherit;
+        width:inherit;
+    }
+    .welcome{
+        position: relative;
+        bottom:80%;
+        justify-content: center;  
+         z-index: 0;
+        font-size: 10vw;
+        
+    }
+    .menu{
+        display: none;
+    }
+    .grid{
+        width:100%;
+        left:0;
+    }
+    
+}
+
+@media only screen and (max-width:849px) and (min-width:1px) {
+
+
+    .left-side{
+        position: relative;
+        width:100%;
+        height:50vh;
+    }
+    .image-wrapper-rec{
+       position: absolute;
+       top:0;
+  
+        height:inherit;
+        width:inherit;
+    }
+    .welcome{
+        position: relative;
+        padding-top: 10%;
+        padding-left: 0%;
+
+        z-index: 0;
+        justify-content: center !important;  
+        font-size: 10vw;
+  
+    }
+    .menu{
+        display: none;
+    }
+
+    .grid{
+
+        width:100%;
+        left:0;
+    }
+
+    .grid img{
+        max-width:100%;
+    }
+    
+
+}
+
+.overlay2{
+    width: inherit;
+    height: inherit;
+    position: absolute;
+    z-index: 1;
+    color: rgb(228, 227, 227);
+    margin:0;
+    text-align: center;
+    opacity:1;
+    
+    
+    text-decoration: none;
+    visibility: show;
+   
+}
+
+.overlay2 h4{
+    color: rgb(228, 227, 227);
+    font-size: 2vh;
+    padding-top:40%;
+    cursor: pointer;
+    margin:0;
+    font-weight: 100;
+    
+}
+a{text-decoration: none;}
+.none{opacity: 0;}
+
+
+

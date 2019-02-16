@@ -3,6 +3,7 @@ import mobilemenustyle from '../styles/mobilemenustyle.css';
 import {BrowserRouter , Route , Link} from 'react-router-dom';
 import WhoWeAre from './WhoWeAre';
 
+
 class MobileMenu extends React.Component{
 
     constructor(props) {
@@ -24,8 +25,8 @@ class MobileMenu extends React.Component{
   
 
 
-    
 
+   
     
 
     render(){     
@@ -33,7 +34,7 @@ class MobileMenu extends React.Component{
        
 
         return(
-            <BrowserRouter>
+            
             <div>
                 <div id='mobile-menu' className={ this.state.active ? "change":"container"}
                                       onClick={ () => this.setState({active: !this.state.active})} >
@@ -48,7 +49,7 @@ class MobileMenu extends React.Component{
                         <Link to='/' onClick={ () => this.setState({active: !this.state.active})}>Καλωσήρθατε</Link>
                         <Link to='/about-us' onClick={ () => this.setState({active: !this.state.active})}>Ποιοί Είμαστε</Link>
                         <Link to='/' onClick={ () => this.setState({active: !this.state.active})}>Προϊόντα</Link>
-                        <Link to='/' onClick={ () => this.setState({active: !this.state.active})}>Συνταγές</Link>
+                        <Link to='/recipes' onClick={ () => this.setState({active: !this.state.active})}>Συνταγές</Link>
                         <Link to='/' onClick={ () => this.setState({active: !this.state.active})}>Blog</Link>
                         <Link to='/' onClick={ () => this.setState({active: !this.state.active})}>Επικοινωνία</Link>
                     </ul>
@@ -58,7 +59,7 @@ class MobileMenu extends React.Component{
              
           
           </div>
-          </BrowserRouter>
+        
 
 
 

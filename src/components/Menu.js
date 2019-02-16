@@ -7,7 +7,7 @@ import menustyle from '../styles/menustyle.css';
 import triagnle from '../images/down copy.png';
 
 
-import {BrowserRouter , Route , Link} from 'react-router-dom';
+import {Link} from 'react-router-dom';
 
 import {withRouter} from 'react-router-dom';
 
@@ -35,7 +35,7 @@ toggle between hiding and showing the dropdown content */
 
     render(){
         return(
-             <BrowserRouter>
+             
                
 
 
@@ -53,7 +53,7 @@ toggle between hiding and showing the dropdown content */
                  <Link to={'/about-us'} >Ποιοί είμαστε</Link>
                  
                     
-                    <Link to='/' onClick={() => this.setState({active: !this.state.active})} className='dropbtn'>Προϊόντα < img className='arrow' src={triagnle} /></Link>
+                    <a onClick={() => this.setState({active: !this.state.active})} className='dropbtn'>Προϊόντα < img className='arrow' src={triagnle} /></a>
                     
                             <div className={ this.state.active ? "show":"hide"}>
                             <div className='dropdown-content'>
@@ -63,9 +63,9 @@ toggle between hiding and showing the dropdown content */
                                 </div>
                             </div>
 
-                    <Link to='/'>Συνταγές</Link>
+                    <Link to='/recipes'>Συνταγές</Link>
                     <Link to='/'>Blog</Link>
-                    <Link to='/'>Επικοινωνία</Link> 
+                    <Link to='/contact'>Επικοινωνία</Link> 
 
                    
                     
@@ -74,7 +74,7 @@ toggle between hiding and showing the dropdown content */
                         
                  </div> 
                 
-            </BrowserRouter> 
+      
         );
     }
 };

@@ -43,8 +43,7 @@
     left: 51vh;
     
     z-index: 2;
-    
-
+    box-shadow: 2px 10px 10px#00000054;
   }
   
   .hide{

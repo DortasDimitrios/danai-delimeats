@@ -9,6 +9,7 @@ import {withRouter} from 'react-router-dom';
 import {BrowserRouter} from 'react-router-dom';
 
 
+
 class Homepage extends React.Component {
     //state
 
@@ -46,7 +47,7 @@ class Homepage extends React.Component {
         if (this.state.w > 1000){
         return(
         
-        <BrowserRouter>
+        
           <div>
               
             <div className='left-side'>
@@ -83,7 +84,7 @@ class Homepage extends React.Component {
             </div>
             
         </div>
-        </BrowserRouter>
+        
 
 
             

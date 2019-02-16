@@ -50,7 +50,7 @@ class WhoWeAre extends React.Component  {
                             
                         <div>
                               <div className='left-side'>
-                              <BrowserRouter>
+                              
                               
                                 <div className='image-wrapper-about'>
                                      
@@ -58,7 +58,7 @@ class WhoWeAre extends React.Component  {
                                    
                                     <h4 className='welcome'>Ποιοί είμαστε</h4>
                                 </div>
-                                </BrowserRouter>
+                                
                               </div>
 
                               <div className='right-side'>
