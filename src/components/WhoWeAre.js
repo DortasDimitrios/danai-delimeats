@@ -10,6 +10,8 @@ import instagram from '../images/instagram.png';
 import linkedin from '../images/linkedin.png';
 import MobileMenu from './MobileMenu';
 import AboutUs from './AboutUs';
+import Searchbar from './Searchbar';
+import More from './More';
 
 class WhoWeAre extends React.Component  {
 
@@ -61,7 +63,7 @@ class WhoWeAre extends React.Component  {
                                 
                               </div>
 
-                              <div className='right-side'>
+                              <div className='right-side'><More/><Searchbar/>
                                                     <AboutUs />
                             </div>
                         </div>
@@ -81,8 +83,12 @@ class WhoWeAre extends React.Component  {
                                 <div className='image-wrapper-about'>
                                 <MobileMenu />
                                 <h4 className='welcome'>Ποιοί Είμαστε</h4>
+                                <More/>
+                                <Searchbar/>
                                 </div>
+                                
                                 </div>
+                                
                                 <AboutUs />
                             </div>
             

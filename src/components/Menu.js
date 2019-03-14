@@ -14,7 +14,6 @@ import {withRouter} from 'react-router-dom';
 
 
 
-
 //these are const variables of components 
 
 
@@ -53,19 +52,13 @@ toggle between hiding and showing the dropdown content */
                  <Link to={'/about-us'} >Ποιοί είμαστε</Link>
                  
                     
-                    <a onClick={() => this.setState({active: !this.state.active})} className='dropbtn'>Προϊόντα < img className='arrow' src={triagnle} /></a>
-                    
-                            <div className={ this.state.active ? "show":"hide"}>
-                            <div className='dropdown-content'>
-                                <Link to='/about-us' >Home</Link>
-                                <Link to='/'>About</Link>
-                                <Link to='/'>Contact</Link>
-                                </div>
-                            </div>
+                    <Link to='/products'>Προϊόντα </Link>
+                                                
 
                     <Link to='/recipes'>Συνταγές</Link>
-                    <Link to='/'>Blog</Link>
+                    <Link to='/blog'>Blog</Link>
                     <Link to='/contact'>Επικοινωνία</Link> 
+                   
 
                    
                     

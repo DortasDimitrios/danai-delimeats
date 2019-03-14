@@ -14,52 +14,6 @@ import {Link} from 'react-router-dom';
 
 
 
-// // this handler will be executed only once when the cursor moves over the unordered list
-// img.addEventListener("mouseenter", function( event ) {   
-//     // highlight the mouseenter target
-//     event.target.classList.add = "active";
-//     event.target.classList.remove = "inactive";
-
-
-
-//     // reset the color after a short delay
-//     setTimeout(function() {
-//       event.target.classList.remove = "active";
-//       event.target.classList.add = "inactive";
-//     }, 500);
-
-
-
-//   }, false);
-
-
-
-
-
-
-
-
-//   render: function render() {
-//     return (
-//       React.createElement("i", {
-//           className: this.state.hover ? "fa fa-heart" : "fa fa-heart-o",
-//           onMouseEnter: this.hoverOn,
-//           onMouseLeave: this.hoverOff },
-
-//         " ", " My class is: ", this.state.hover ? "fa-heart" : "fa-heart-o"));
-
-
-//   } });
-
-
-// ReactDOM.render(React.createElement(HoverTest, { name: "World" }), document.getElementById('container'));
-
-
-
-
-
-
-
 
 
 
@@ -81,14 +35,28 @@ class RecipeGrid extends React.Component{
         super(props);
         this.state = {hover : false}
     }
+    // const style = {
+    //     display = this.state.hover ? "none" : 'inline-block'
+    // };
     
+    // const handleMouseEnter = () => this.setState({hover : true});
+    // const handleMouseLeave = () => this.setState({hover : false});
     
-    
+    // className={'inactive' ? 'active' :this.state.hoverhover
+    // onMouseOver={this.setState({hover:true})
 
 
 
 
     render(){
+        // const style = {
+            
+        //     opacity : this.state.hover ? '1' : '0'
+           
+        // };
+        
+        // const handleMouseEnter = () => this.setState({hover : true});
+        // const handleMouseLeave = () => this.setState({hover : false});
         return(
             
             <div style={{backgroundColor:'black'}} className="right-side-grid">
@@ -96,17 +64,91 @@ class RecipeGrid extends React.Component{
                   
                   
            
-                    <img  src={rec1}/>
-                
-                    <img  src={rec2}/>
-                    <img  src={rec3}/>
-                    <img  src={rec4}/>
-                    <img  src={rec5}/>
-                    <img  src={rec6}/>
-                    <img  src={rec7}/>
-                    <img  src={rec8}/>
+                    
+                    <div className='grid-overlay'>
+                    <img  src={rec1} /> 
+                        <div className='over' >
+                        <Link  to='/recipes/spaghetti-apaki'
+                        
+                    
+                        className='txt'>
+                        Spaghetti με pesto λιαστής τομάτας και απάκι κοτόπουλο
+                        </Link> 
+                        </div>
+                    </div>
+                    <div className='grid-overlay'>
+                    <img  src={rec2} /> 
+                        <div className='over' >
+                        <Link  to='/recipes/potato-salad-with-bacon'
+                        
+                        className='txt'>
+                        Πατατοσαλάτα με bacon
+                        </Link> 
+                        </div>
+                    </div>
+                    <div className='grid-overlay'>
+                    <img  src={rec3} /> 
+                        <div className='over' >
+                        <Link  to='/recipes/fasolada'
+                        
+                        className='txt'>
+                         Φασολάδα με λουκάνικο
+                        </Link> 
+                        </div>
+                    </div>
+                    <div className='grid-overlay'>
+                    <img  src={rec4} /> 
+                        <div className='over' >
+                        <Link  to='/recipes/salata-avocado'
+                        
+                        className='txt'>
+                        Πράσινη σαλάτα με αβοκάντο και απάκι κοτόπουλο
+                        </Link> 
+                        </div>
+                    </div>
+                    <div className='grid-overlay'>
+                    <img  src={rec5} /> 
+                        <div className='over' >
+                        <Link  to='/recipes/spaghetti-apaki-manitaria'
+                        
+                        className='txt'>
+                        Spaghetti με απάκι και μανιτάρια
+                        </Link> 
+                        </div>
+                    </div>
+                    <div className='grid-overlay'>
+                    <img  src={rec6} /> 
+                        <div className='over' >
+                        <Link  to='/recipes/sandwich'
+                        
+                        className='txt'>
+                        Σάντουιτς με απάκι και κατίκι Δομοκού
+                        </Link> 
+                        </div>
+                    </div>
+                    <div className='grid-overlay'>
+                    <img  src={rec7} /> 
+                        <div className='over' >
+                        <Link  to='/recipes/burger'
+                        
+                        className='txt'>
+                        Burger με μπιφτέκι και καπνιστή μπριζόλα
+                        </Link> 
+                        </div>
+                    </div>
+                    <div className='grid-overlay'>
+                    <img  src={rec8} /> 
+                        <div className='over' >
+                        <Link  to='/recipes/kritharoto'
+                        
+                        className='txt'>
+                        Κριθαρότο με απάκι και γραβιέρα
+                        </Link> 
+                        </div>
+                    </div>
+
                  
-                </div>
+                    </div>
             </div>
         );
     }

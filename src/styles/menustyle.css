@@ -2,16 +2,20 @@
     list-style: none;
     padding:0;
     margin:0;
+   
+    
 }
 
 
 .menu a{
+   
     display: block;
     float: left;
     padding: 1.2em 0.5em 0.5em 1.2em;
     text-decoration: none;
     transition: 200ms;
     color:rgb(206, 206, 206);
+
 }
 .menu a:hover{
     color:white;
@@ -21,7 +25,7 @@
 
 .menu{
     color:rgb(206, 206, 206);
-   font-size: 2.8vh;
+   font-size: 2.5vh;
    
 }
 .arrow{

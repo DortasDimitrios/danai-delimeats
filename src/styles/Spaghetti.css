@@ -1,0 +1,85 @@
+.welcome-rec{
+    color: rgb(224, 224, 224);
+    font-size: 3vw;
+    z-index: 2;
+    position: absolute;
+    padding-top: 30%;
+    text-align: center;
+}
+
+.image-wrapper-spaghetti{
+
+    height: 100vh;
+   background-image: url('../images/apaki-dark.jpg');
+   background-size: cover;
+   background-position-x: 9;
+}
+.right-side{
+    margin-top:5%;
+    padding:2%;
+    width: 49%;
+    float:right;
+}
+
+
+@media only screen and (max-width: 1000px) and (min-width:850px){
+    .left-side{
+        position: relative;
+        width:100%;
+        height:50vh;
+    }
+    .image-wrapper-spaghetti{
+       position: absolute;
+       top:0;
+        height:inherit;
+        width:inherit;
+    }
+    .welcome-rec{
+        position: relative;
+        bottom:60%;
+        text-align:center;
+       z-index:0;
+        font-size: 4vw;
+        
+    }
+    .menu{
+        display: none;
+    }
+    .right-side{
+        width:100%;
+        padding:3%;
+    }
+    
+}
+
+@media only screen and (max-width:849px) and (min-width:1px) {
+
+
+    .left-side{
+        position: relative;
+        width:100%;
+        height:50vh;
+    }
+    .image-wrapper-spaghetti{
+       position: absolute;
+       top:0;
+        height:inherit;
+        width:inherit;
+    }
+    .welcome-rec{
+        position: relative;
+        justify-content: center;  
+        font-size: 4vw;
+        bottom:24%;
+        z-index:0;
+    }
+    .menu{
+        display: none;
+    }
+    .right-side{
+        width:100%;
+        padding:3%
+    }
+    
+
+}

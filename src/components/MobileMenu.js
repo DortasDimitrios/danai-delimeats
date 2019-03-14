@@ -48,10 +48,10 @@ class MobileMenu extends React.Component{
                     <ul>
                         <Link to='/' onClick={ () => this.setState({active: !this.state.active})}>Καλωσήρθατε</Link>
                         <Link to='/about-us' onClick={ () => this.setState({active: !this.state.active})}>Ποιοί Είμαστε</Link>
-                        <Link to='/' onClick={ () => this.setState({active: !this.state.active})}>Προϊόντα</Link>
+                        <Link to='/products' onClick={ () => this.setState({active: !this.state.active})}>Προϊόντα</Link>
                         <Link to='/recipes' onClick={ () => this.setState({active: !this.state.active})}>Συνταγές</Link>
-                        <Link to='/' onClick={ () => this.setState({active: !this.state.active})}>Blog</Link>
-                        <Link to='/' onClick={ () => this.setState({active: !this.state.active})}>Επικοινωνία</Link>
+                        <Link to='/blog' onClick={ () => this.setState({active: !this.state.active})}>Blog</Link>
+                        <Link to='/contact' onClick={ () => this.setState({active: !this.state.active})}>Επικοινωνία</Link>
                     </ul>
                 </div>
           </div>

@@ -8,7 +8,8 @@ import twitter from '../images/twitter.png';
 import fb from '../images/facebook.png';
 import instagram from '../images/instagram.png';
 import linkedin from '../images/linkedin.png';
-import MobileMenu from './MobileMenu'
+import MobileMenu from './MobileMenu';
+import More from './More';
 
 class About extends React.Component {
     render(){
@@ -31,7 +32,7 @@ class About extends React.Component {
               <h1>Η οικογένεια μεγαλώνει!</h1>
               <p>Η οικογένειά τους μεγάλωνε παράλληλα με την απόκτηση 3 παιδιών. Το 2012, η σκυτάλη παραδόθηκε στα παιδιά Κων/νο και Άννα Γιαννακού. Η εταιρία εστιάζει πλέον στην παραγωγή gourmet αλλαντικών.
 
-              Ο Δημήτρης & η «κυρά Δανάη» παραμένουν η ψυχή της εταιρίας. Ταυτόχρονα αποδεικνύουν πως η σκληρή δουλειά, η υπομονή και το μεράκι μπορούν να πραγματοποιήσουν κάθε μας όνειρο.
+              Ο Δημήτρης και η «κυρά Δανάη» παραμένουν η ψυχή της εταιρίας. Ταυτόχρονα αποδεικνύουν πως η σκληρή δουλειά, η υπομονή και το μεράκι μπορούν να πραγματοποιήσουν κάθε μας όνειρο.
               </p>
               <br></br>
               <br></br>

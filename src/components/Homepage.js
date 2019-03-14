@@ -7,6 +7,8 @@ import HomeMobile from './HomeMobile.js';
 import Menu from './Menu'
 import {withRouter} from 'react-router-dom';
 import {BrowserRouter} from 'react-router-dom';
+import Searchbar from './Searchbar';
+import More from './More';
 
 
 
@@ -49,11 +51,12 @@ class Homepage extends React.Component {
         
         
           <div>
-              
+             
             <div className='left-side'>
             <h4 className='welcome'>Καλωσήρθατε</h4>
+            <Menu />
                 <div className='image-wrapper'>
-                    <Menu />
+                 
                  </div>
 
                  
@@ -61,6 +64,8 @@ class Homepage extends React.Component {
             </div>
 
             <div className='right-side'>
+            <More/>
+            <Searchbar/>
                 <div className='logo-wrapper'>
                     <img src={logo} />
                 </div>
@@ -93,12 +98,16 @@ class Homepage extends React.Component {
         else{
             return(
             <div>
+                    
                 <div className='left-side'>
+           
                 <div className='image-wrapper'>
                 <MobileMenu />
                 <h4 className='welcome'>Καλωσήρθατε</h4>
                 </div>
                 </div>
+                <More/>
+                <Searchbar/>
                 <HomeMobile />
             </div>
             
